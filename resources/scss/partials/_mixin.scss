@@ -1,0 +1,11 @@
+@mixin display-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin button {
+    background-color: #0080f8;
+    color: white;
+    padding: 8px 40px;
+}
