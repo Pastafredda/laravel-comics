@@ -9,7 +9,8 @@
             <div>
                 <ul class="nav-menu">
                     @foreach ($links as $link)
-                        <li>{{ $link['text'] }}</li>
+                        <li><a href="#" @class([$link['current'] ? 'active' : 'black'])>{{ $link['text'] }}</a>
+                        </li>
                     @endforeach
                 </ul>
             </div>
