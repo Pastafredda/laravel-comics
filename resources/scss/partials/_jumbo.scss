@@ -1,0 +1,44 @@
+@import 'mixin';
+@import'card';
+
+#jumbo {
+    .jumbo {
+        height: 315px;
+        width: 100%;
+        background-image: url('../img/jumbotron.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .comics {
+        background-color: #232323;
+
+        a {
+            @include button;
+            font-size: 16px;
+            position: relative;
+            top: -10px;
+        }
+
+
+        .button {
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+
+            a {
+                @include button;
+                font-size: 12px;
+            }
+        }
+
+        .flex-comics {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 30px 0;
+        }
+
+    }
+}

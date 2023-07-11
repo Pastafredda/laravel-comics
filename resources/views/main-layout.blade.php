@@ -15,9 +15,15 @@
 </head>
 
 <body>
+
     <header>
-        @yield('header')
+        @include('components.header')
+
     </header>
+
+    <main>
+        @include('components.jumbo')
+    </main>
 </body>
 
 </html>

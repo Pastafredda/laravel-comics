@@ -1,4 +1,40 @@
 @import '~bootstrap/scss/bootstrap';
 
 @import 'partials/header';
+@import 'partials/jumbo';
 @import 'partials/mixin';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.active {
+    color: #0080f8;
+
+}
+
+.black {
+    color: #313232;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
