@@ -77,6 +77,150 @@ Route::get('/', function () {
 
     ];
 
+    $cards = [
+        [
+            "text" => "DIGITAL COMICS",
+            "url" => "#",
+            "image" => "buy-comics-digital-comics.png"
+        ],
+
+        [
+            "text" => "DC MERCHANDISE",
+            "url" => "#",
+            "image" => "buy-comics-merchandise.png"
+        ],
+
+        [
+            "text" => "SUBSCRIPTION",
+            "url" => "#",
+            "image" => "buy-comics-subscriptions.png"
+        ],
+
+        [
+            "text" => "COMIC SHOP LOCATOR",
+            "url" => "#",
+            "image" => "buy-comics-shop-locator.png"
+        ],
+
+        [
+            "text" => "DC POWER VISA",
+            "url" => "#",
+            "image" => "buy-dc-power-visa.svg"
+        ],
+    ];
+
+    $footers = [
+        [
+            "title" => "DC COMICS",
+            "texts" => [
+                [
+                    "text" => "Characters"
+                ],
+
+                [
+                    "text" => "Comics"
+                ],
+                [
+                    "text" => "Movies"
+
+                ],
+                [
+                    "text" => "TV"
+
+                ],
+                [
+                    "text" => "Games"
+
+                ],
+            ]
+        ],
+        [
+            "title" => "SHOP",
+            "texts" => [
+                [
+                    "text" => "Shop DC"
+                ],
+
+                [
+                    "text" => "Shop DC Collectibles"
+                ],
+            ]
+        ],
+
+        [
+            "title" => "DC",
+            "texts" => [
+                [
+                    "text" => "Terms Of Use"
+                ],
+
+                [
+                    "text" => "Privacy policy (New)"
+                ],
+
+                [
+                    "text" => "Ad Choices"
+                ],
+
+                [
+                    "text" => "Advertising"
+                ],
+
+                [
+                    "text" => "Jobs"
+                ],
+
+                [
+                    "text" => "Subscriptions"
+                ],
+
+                [
+                    "text" => "Talent Workshops"
+                ],
+
+                [
+                    "text" => "CPSC Certificates"
+                ],
+
+                [
+                    "text" => "Rating"
+                ],
+
+                [
+                    "text" => "Shop Help"
+                ],
+
+                [
+                    "text" => "Contact Us"
+                ],
+            ]
+        ],
+        [
+            "title" => "SITES",
+            "texts" => [
+                [
+                    "text" => "DC"
+                ],
+
+                [
+                    "text" => "MAD Magazine"
+                ],
+
+                [
+                    "text" => "DC Kids"
+                ],
+
+                [
+                    "text" => "DC Universe"
+                ],
+
+                [
+                    "text" => "DC Power Visa"
+                ]
+            ]
+        ]
+    ];
+
     $fumetti = [
         [
             "title" => "Action Comics #1000: The Deluxe Edition",
@@ -291,7 +435,7 @@ Route::get('/', function () {
         ],
     ];
 
-    return view('main-layout', compact('links'), compact('fumetti'));
+    return view('main-layout', compact('links', 'cards', 'fumetti', 'footers'));
 });
 
 

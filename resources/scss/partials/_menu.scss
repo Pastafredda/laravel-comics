@@ -1,0 +1,33 @@
+@import 'mixin';
+
+#menu {
+    .main-menu {
+        background-color: #0080f8;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+
+        .card-menu {
+            @include display-flex;
+
+        }
+
+        .cardo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-card {
+            height: 54px;
+            width: 54px;
+            padding-right: 10px;
+
+        }
+
+        span {
+            font-size: 14px;
+            color: white;
+        }
+    }
+}

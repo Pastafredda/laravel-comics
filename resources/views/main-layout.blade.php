@@ -23,7 +23,12 @@
 
     <main>
         @include('components.jumbo')
+        @include('components.menu')
     </main>
+
+    <footer>
+        @include('components.footer')
+    </footer>
 </body>
 
 </html>
