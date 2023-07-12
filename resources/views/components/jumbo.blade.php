@@ -5,7 +5,7 @@
         <div class="container">
 
             <a href="#">CURRENT SERIES</a>
-            @include('layouts.card')
+            @yield('layouts.card')
             <div class="button">
                 <a href="#">LOAD MORE</a>
             </div>

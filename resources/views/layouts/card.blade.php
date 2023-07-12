@@ -1,13 +1,14 @@
-<div id="card">
-    <div class="flex-comics">
+@extends('components.jumbo')
 
-        @foreach ($fumetti as $fumetto)
-            <div class="comic">
-                <img src={{ $fumetto['thumb'] }} alt="">
-                <h5>{{ $fumetto['series'] }}</h5>
-            </div>
-        @endforeach
-
-
+@section('card')
+    <div id="card">
+        <div class="flex-comics">
+            @foreach ($fumetti as $fumetto)
+                <div class="comic">
+                    <img src={{ $fumetto['thumb'] }} alt="">
+                    <h5>{{ $fumetto['series'] }}</h5>
+                </div>
+            @endforeach
+        </div>
     </div>
-</div>
+@endsection
