@@ -3,9 +3,8 @@
     <div class="comics">
 
         <div class="container">
-
             <a href="#">CURRENT SERIES</a>
-            @yield('layouts.card')
+            @include('components.card')
             <div class="button">
                 <a href="#">LOAD MORE</a>
             </div>

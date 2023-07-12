@@ -18,12 +18,10 @@
 
     <header>
         @include('components.header')
-
     </header>
 
     <main>
-        @include('components.jumbo')
-        @include('components.menu')
+        @yield('content')
     </main>
 
     <footer>
